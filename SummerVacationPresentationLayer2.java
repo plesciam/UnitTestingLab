@@ -12,7 +12,7 @@ public class SummerVacationPresentationLayer2 extends SummerVacationDALTest
     public static void setActivityScanner(Scanner activityScanner) {
         SummerVacationPresentationLayer2.activityScanner = activityScanner;
     }
-    private static SummerVacationDAL GetDAL(SummerVacationDAL2 summerVacationDAL2)
+    private static SummerVacationDAL GetDAL()
     {
         @SuppressWarnings("resource")
         Scanner CredentialScanner = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class SummerVacationPresentationLayer2 extends SummerVacationDALTest
     }
     public static void main(String[] args)
     {
-        SummerVacationDAL dal = GetDAL(new SummerVacationDAL2(null, null, null));
+        SummerVacationDAL dal = GetDAL();
         System.out.println("Welcome to your summer vacation planner! Please enter an activity name to see potential vacation options!");
         @SuppressWarnings("resource")
         Scanner activityScanner = new Scanner(System.in);
